@@ -334,6 +334,37 @@ h1 {
   font-size: 0.95rem;
 }
 
+.video-section {
+  text-align: center;
+}
+
+.video-frame-wrap {
+  width: min(75%, 1000px);
+  margin: 0.9rem auto 0;
+}
+
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.8rem;
+  display: block;
+}
+
+.video-fallback {
+  margin-top: 0.8rem;
+  color: var(--muted);
+}
+
+.video-fallback a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.video-fallback a:hover {
+  color: var(--brand);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -418,6 +449,10 @@ h1 {
   .paper-item a {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .video-frame-wrap {
+    width: 100%;
   }
 }
 
