@@ -276,6 +276,64 @@ h1 {
   font-size: 0.95rem;
 }
 
+.papers-intro {
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.papers-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.papers-list li {
+  margin: 0.2rem 0;
+}
+
+.papers-list a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.papers-list a:hover {
+  color: var(--brand);
+}
+
+.paper-library {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.paper-item a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.paper-item a:hover {
+  border-color: color-mix(in srgb, var(--brand) 45%, transparent);
+  transform: translateY(-1px);
+}
+
+.paper-title {
+  font-weight: 700;
+}
+
+.paper-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -355,6 +413,11 @@ h1 {
 
   .card {
     padding: 1rem;
+  }
+
+  .paper-item a {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
